@@ -14,7 +14,9 @@
     "skipLibCheck": true,
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
-    "paths": {}
+    "paths": {
+      "@poc-prune-deps/the-lib": ["packages/the-lib/src/index.ts"]
+    }
   },
   "exclude": ["node_modules", "tmp"]
 }
