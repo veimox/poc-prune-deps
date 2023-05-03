@@ -1,3 +1,4 @@
-import { theLib } from '@poc-prune-deps/the-lib';
+import { printWithPino, print } from '@poc-prune-deps/the-lib';
 
-console.log(theLib());
+print();
+printWithPino();

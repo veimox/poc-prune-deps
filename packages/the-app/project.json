@@ -68,10 +68,7 @@
       "options": {
         "cwd": "dist/packages/the-app",
         "parallel": false,
-        "commands": [
-          "depcheck --json | jq -r '.dependencies[]' | while read dependency; do sed -i .bak -e \"/$(echo $dependency | sed 's/\\//\\\\\\//g')/d\" package.json; done && rm -f *.bak",
-          "npm ci"
-        ]
+        "commands": ["depoptimizer"]
       }
     }
   },
